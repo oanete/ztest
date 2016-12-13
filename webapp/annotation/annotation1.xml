@@ -51,6 +51,9 @@
 					</Collection>
 				</Annotation>
 			</Annotations>
+			<Annotations Target="NorthwindModel/CustomerNotify">
+				<Annotation Term="com.sap.vocabularies.Common.v1.IsActionCritical" Bool="true"/>
+			</Annotations>
 		</Schema>
 	</edmx:DataServices>
 </edmx:Edmx>
