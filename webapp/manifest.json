@@ -11,7 +11,7 @@
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
 		"tags": {
-			"keywords": [ "{{test}}" ]
+			"keywords": ["{{test}}"]
 		},
 		"dataSources": {
 			"mainService": {
@@ -103,7 +103,27 @@
 			}
 		},
 		"extends": {
-			"extensions": {}
+			"extensions": {
+				"sap.ui.controllerExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"controllerName": "ZTEST.ext.controller.Popup",
+						"sap.ui.generic.app": {
+							"Customers": {
+								"EntitySet": "Customers",
+								"Actions": {
+									"zButton": {
+										"id": "zButton",
+										"text": "Notify (extension)",
+										"press": "onNotifyCustomer",
+										"determining": true,
+										"requiresSelection": true
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		},
 		"contentDensities": {
 			"compact": true,
@@ -112,20 +132,18 @@
 	},
 	"sap.ui.generic.app": {
 		"_version": "1.1.0",
-		"pages": [
-			{
-				"entitySet": "Customers",
-				"component": {
-					"name": "sap.suite.ui.generic.template.ListReport",
-					"list": true,
-					"settings": {
-						"multiSelect": true,
-						"gridTable": true,
-						"smartVariantManagement": true
-					}
+		"pages": [{
+			"entitySet": "Customers",
+			"component": {
+				"name": "sap.suite.ui.generic.template.ListReport",
+				"list": true,
+				"settings": {
+					"multiSelect": true,
+					"gridTable": true,
+					"smartVariantManagement": true
 				}
 			}
-		]
+		}]
 	},
 	"sap.platform.hcp": {
 		"_version": "1.2.0",

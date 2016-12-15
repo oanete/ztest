@@ -39,7 +39,7 @@
 						</Record>
 						<Record Type="UI.DataFieldForAction">
 							<Annotation Term="UI.InvocationGrouping" EnumMember="UI.OperationGroupingType/ChangeSet"/>
-							<PropertyValue Property="Label" String="Notify customer"/>
+							<PropertyValue Property="Label" String="Notify (annotation)"/>
 							<PropertyValue Property="Action" String="NorthwindModel/CustomerNotify"/>
 						</Record>
 					</Collection>
@@ -51,9 +51,11 @@
 					</Collection>
 				</Annotation>
 			</Annotations>
+			<!--
 			<Annotations Target="NorthwindModel/CustomerNotify">
 				<Annotation Term="com.sap.vocabularies.Common.v1.IsActionCritical" Bool="true"/>
 			</Annotations>
+			-->
 		</Schema>
 	</edmx:DataServices>
 </edmx:Edmx>
