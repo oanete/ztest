@@ -1,4 +1,4 @@
-sap.ui.controller("ZTEST.ext.controller.Popup", {
+sap.ui.controller("ZTEST.ext.controller.Popup", { 
 	onNotifyCustomer: function(oEvent) {
 		var oSmartTable = oEvent.getSource().getParent().getParent().getTable();
 		var selection = oSmartTable.getSelectedIndices();
@@ -12,6 +12,7 @@ sap.ui.controller("ZTEST.ext.controller.Popup", {
 						title: "Confirm",
 						actions: [sap.m.MessageBox.Action.YES, sap.m.MessageBox.Action.NO],
 						onClose: function(oAction) {
+							//todo
 							alert(oAction);
 						}
 					}

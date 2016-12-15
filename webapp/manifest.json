@@ -107,16 +107,14 @@
 				"sap.ui.controllerExtensions": {
 					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
 						"controllerName": "ZTEST.ext.controller.Popup",
-						"sap.ui.generic.app": {
+						"sap.ui.generic.app": { 
 							"Customers": {
 								"EntitySet": "Customers",
 								"Actions": {
 									"zButton": {
 										"id": "zButton",
 										"text": "Notify (extension)",
-										"press": "onNotifyCustomer",
-										"determining": true,
-										"requiresSelection": true
+										"press": "onNotifyCustomer"
 									}
 								}
 							}
